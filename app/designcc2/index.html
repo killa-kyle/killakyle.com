@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Design Subreddits</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<h1 class="text-center">Design Subreddits</h1>
+		<div id="links"><ul></ul></div>
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	
+
+
+	<script >
+		$(document).ready(function() {
+		  
+		  subreddits=["design_critiques","design","crappydesign","userexperience","webdev","css","jquery","javascript","php","wordpress","webhosting","talesfromdesigners","webmarketing","dotcom","somebodymakethis"];
+		  
+		  for (var i=0 ;i < subreddits.length;i++) {
+		    
+		    $("#links ul").append('\
+		    	<li><a onclick="expand(\''+i+'\')">/r/'+subreddits[i]+'</a><div class="link-'+i+'"><span  class="json-data-'+subreddits[i]+'">Loading data...</span><a href="http://www.reddit.com/r/'+subreddits[i]+'/" class="gotosub" target="_blank">Go to subreddit &rarr;</a></div></li>'); 
+		    
+		    $.getJSON("http://www.reddit.com/r/"+subreddits[i]+"/.json", function(data) {
+		      subreddit=data.data.children[0].data.subreddit;
+		      title=data.data.children[0].data.title;
+		      link=data.data.children[0].data.url;
+		      author=data.data.children[0].data.author;
+		      numcomments=data.data.children[0].data.num_comments;
+		      permalink=data.data.children[0].data.permalink;
+		      
+		      $(".json-data-"+subreddit).html('<a href="'+link+'" target="_blank">'+title+'</a><br><small>by <a href="http://www.reddit.com/user/'+author+'/" target="_blank">'+author+'</a>, <a href="'+permalink+'" target="_blank">'+numcomments+' comments</a></small><br>');
+		     
+		    });
+		    
+		  }
+		  
+		});
+
+
+		function expand(i) {
+		  for(var j=0;j<15;j++) {
+		    if(j==i) {
+		        $(".link-"+j).slideToggle();
+		    }
+		    else {
+		       $(".link-"+j).slideUp();
+		    }
+		  }
+		}
+
+	</script>
+
+	</body>
+
+
+</html>

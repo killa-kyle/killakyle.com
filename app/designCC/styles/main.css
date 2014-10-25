@@ -1,0 +1,193 @@
+/******************************
+General Styles
+******************************/
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+}
+
+section {
+   padding: 20px 20px;
+}
+
+/******************************
+Text Styles
+******************************/
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+}
+
+h2 {
+    font-size: 48px; 
+    line-height: 1;
+    color: #555;
+}
+
+/*centered section header*/
+h3 {
+    text-align: center;
+}
+h4 {
+    margin: 0;
+}
+a:hover {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+section p {
+    display: inline-block;
+}
+section>p>a {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+    /*display: inline-block;*/
+    margin: 0 10px 0 0;
+}
+section>p>a:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.colored-link-1 {
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    /*color: #5c5c5c;*/
+    text-decoration: underline;
+       word-wrap: break-word;
+
+}
+
+
+
+
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    /*border-bottom: 2px solid rgba(255, 255, 255, 0.2);*/
+    margin-top: 10px;
+}
+
+
+.panel-one {
+ margin-bottom: 20px;
+ background-color: #EB7B59;
+ border-top: none;
+}
+
+.panel-one .panel-heading {
+     /*background-color: #EB7B59;*/
+     color: white;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+border-top: none;
+}
+
+
+a.headerlogo{
+    text-decoration: none;
+}
+.reddit {
+    color: #F5634A;
+}
+/**************************************
+            SECTION COLORS
+**************************************/
+.headsection {
+    background-color: #FAD089;
+    min-height: 250px;
+
+
+}
+    .headsection h1 {
+        letter-spacing: -0.04em;
+        float: right;
+        margin: 0;
+        padding-top: 60px;
+
+
+    }
+    .headsection h2 {
+        margin: 0;
+        float: right;
+        letter-spacing: -0.04em;
+        float: right;
+        margin: 0;
+    }
+
+    .headsection .container {
+        padding-top: 40px;
+        padding: 10px;
+        width: auto;
+    }
+
+.two {
+    background-color: #FF9C5B;
+    /*background-color: #EB7B59;*/
+    /*background-color: #44BF87;*/
+    /*background-color: #DA727E;*/
+    min-height: 80px;
+}
+
+.three {
+    background-color: #F5634A;
+    /*background-color: #F49B78;*/
+    /*background-color: #FBD258;*/
+    /*background-color: #F29A3F;*/
+    /*background-color: #AC6C82;*/
+    min-height: 80px;
+}
+
+.four {
+    background-color: #64908A;
+    /*background-color: #F25A49;*/
+    /*background-color: #685C79;*/
+    min-height:  80px;
+}
+
+.five {
+    /*background-color: #E8CAA4;*/
+    background-color: #C04848;
+    /*background-color: #455C7B;*/
+    min-height: 80px;
+}
+
+
+
+
+#design.panel-body {
+    padding: 20px;
+}
+
+
+
+footer {
+    width: 100%;
+    padding: 80px 40px 60px;
+    height: auto;
+    background-color: #455C7B;
+
+}
+
+footer a {
+    color: #FF9C5B;
+}
+
+footer h2 {
+        color: #fff;
+}
+
+

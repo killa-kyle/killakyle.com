@@ -1,0 +1,137 @@
+
+
+
+.header {
+  margin: 30px 0px;
+}
+  .header-img {
+    margin: 0 auto;
+    z-index: 10 ;
+  }
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  
+  margin-bottom: 30px;
+  background-image: url('../img/knickbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: #000;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /*height: 20px;*/
+  padding: 10px 10px 0 10px;
+  color: #fff;
+  background-color: rgba(0,0,0, 0.5);
+  z-index:10;
+  font-size: 12px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #AF3947;
+  color: #fff;
+  box-shadow: 0 6px #94313C;
+
+}
+
+.btn:active {
+  box-shadow: 0 0 #ab3c3c;
+  top: 6px;
+}
+
+
+
+
+
+
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: transparent url(../img/pattern.png) repeat top left;
+  z-index: -10;
+}
+#placeholder {
+  margin-top: 90px;
+}
+
+.col-md-3 {
+  padding-bottom: 20px;
+}
+.btn {
+  font-size: 30px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+  /*font-family: 'Niconne', cursive;*/
+  font-family: Avenir,'Lato', sans-serif;
+}
+#result {
+  background-color: rgba(175, 57, 71, 0.7);
+  padding: 20px 0px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.generatedName {
+  margin-top: 40px;
+}
+
+
+/*target iphones*/
+@media (min-width: 320px) and (max-width: 767px){
+    h1 {
+      font-size: 30px;
+      
+      margin: 0;
+      /*font-family: 'Niconne', cursive;*/
+      font-family: Avenir,'Lato', sans-serif;
+    }
+
+    .btn {
+      font-size: 18px;
+    }
+
+    .selectcol {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    #result {
+      background-color: rgba(175, 57, 71, 0.7);
+      /*background-color: lightblue;*/
+      padding: 20px 0px;
+      color: #fff;
+      border-radius: 10px;
+    }
+    .generatedName {
+      margin-top: -40px;
+    }
+
+}

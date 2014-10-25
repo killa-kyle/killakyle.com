@@ -1,0 +1,430 @@
+/* ==========================================================================
+Lists
+========================================================================== */
+/* * Addresses margins set differently in IE 6/7. */
+ 
+dl, menu, ol, ul {
+    margin: 1em 0;
+
+}
+dd {
+    margin: 0 0 0 40px;
+}
+/* * Addresses paddings set differently in IE 6/7. */
+/*menu, ol, ul {
+    padding: 0 0 0 40px;
+}*/
+
+
+/*Text Styles*/
+html, body {
+    /*font-size: 18px;*/
+    font-size: 1.125em;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #464A50;
+  
+  background-color: #fbfbfb;
+}
+
+p {margin-bottom: 1.3em;}
+a {
+    color: #282f35;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+a:hover {
+    color: #6E8458;
+    text-decoration: none;
+}
+p {
+    /*text-align: left;*/
+    /*font-size: 14px;*/
+    /*color: #848789;*/
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.8em;
+    margin-top: 25px;
+}
+
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+h2 {font-size: 1.728em;}
+
+h3 {font-size: 1.44em;}
+
+h4 {font-size: 1.2em;}
+
+small, .font_small {font-size: 0.833em;}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.container-fluid {
+     height: 100%;
+     width: 100%;
+     padding-right: 0;
+     padding-left: 0;
+ }
+
+.container-fluid-header {
+     height: 100%;
+     display: table;
+     width: 100%;
+     padding-right: 0;
+     padding-left: 0;
+
+ }
+
+/*Panel styles*/
+ #scotch-panel {
+    background: #525E43;
+}
+#scotch-panel h2 {
+    color: #fbfbfb;
+    margin: 15px;
+}
+
+#scotch-panel ul {
+    padding-left: 0;
+}
+
+#scotch-panel li {
+    list-style: none;
+    padding: 20px;
+    color: #fbfbfb
+}
+
+#scotch-panel li a {
+    color: #fbfbfb;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    
+}
+#scotch-panel li:hover {
+
+        background-color: rgba(255,255,255, .4);
+}
+
+/*Clickable overlay to close the scotch-panel*/
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999999;
+      -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+    -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  
+  cursor: pointer;
+}
+.scotch-is-showing .overlay {
+  display: block;
+}
+
+
+
+
+/*Navbar styles*/
+
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-nav>li>a {
+    padding: 20px 15px;
+}
+.navbar-brand {
+    height: 60px;
+    font-size: 26px;
+    padding: 20px 15px;
+    font-weight: 700;
+}
+.navbar .navbar-default {
+    background-color: #fbfbfb;
+}
+.navbar-toggle {
+    /*margin: 15px auto;*/
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    /*margin-bottom: 8px;*/
+}
+.hero {
+    /*background: url(../img/hero-bg.jpg) no-repeat top center #f4f5fc;*/
+    background: url('../img/lumber.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*height: 100%;*/
+    /*min-height: 685px;*/
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+
+}
+
+.hero-text {
+    height: 685px;
+}
+
+.hero .hero-logo {
+    border-radius: 50%;
+    width: 400px;
+    margin-top: 150px;
+
+}
+
+
+
+/* ==========================================================================
+    Section paddings
+========================================================================== */
+.sec1 {
+    /*padding: 115px 15px 0 15px;*/
+    padding: 40px 15px 0 15px;
+    background-color: #fbfbfb;
+}
+.sec2 {
+    /*padding: 115px 15px 0 15px;*/
+    padding: 0 15px 0 15px;
+    /*padding: 40px 15px 0 15px;*/
+    /*background-color: #ECE8CC;*/
+    margin-top: 115px;
+}
+
+
+.sec3 {
+    padding: 56px 15px 0 15px;
+    padding: 115px 15px 0 15px;
+    background-color: #fbfbfb;
+}
+
+/* ==========================================================================
+    Section styling
+========================================================================== */
+
+
+
+
+ul.services {
+    /*text-align: justify;*/
+    padding-left: 5px;
+    
+}
+
+ul.services li {
+    
+    list-style: none;
+    font-weight: 300;
+}
+.subservice {
+    font-weight: 700;
+    text-align: center;
+
+}
+
+
+ /*font awesome tree icon color*/
+.fatree {
+    color: #525E43;  /*this needs to change*/
+    padding: 0 20px;
+
+}
+
+.tel {
+    font-weight: 700;
+}
+
+.intro {
+    /*text-align: left;*/
+}
+
+
+
+.sectionhead {
+    text-align: center;
+    text-transform: uppercase;
+    color: #353738;
+    letter-spacing: 2px;
+    position: relative;
+    /*padding-top: 75px;*/
+}
+
+.lumberleft {
+    /*background-image: url('../img/lumber_left.jpg');*/
+     background: url('https://41.media.tumblr.com/63343aa7a2da7c47466a6db1c98e90fa/tumblr_n0y05sZ0r21rq2p74o1_1280.jpg');
+     border-radius: 0 20px 20px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.lumberright {
+    background-image: url('../img/lumber_left.jpg');
+     border-radius: 20px 0 0 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    position: relative;    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1111px) {
+  .tree {
+        font-size: 10px; 
+     }
+}
+
+/*smaller screens*/
+@media screen and (max-width: 768px) {
+      
+      /*bring font size down to fix more text on screen*/
+      body  {
+        font-size: 18px;
+      }
+      /*reduce section header fonts*/
+     .sectionhead {
+        font-size: 20px; 
+     }
+      /*hide section FA trees on smaller screens*/
+     .fa-tree {
+      visibility: hidden;
+     }
+    
+
+      
+      /*Show FA tree icon on navbar*/
+     .navbar-toggle .fa-tree {
+      visibility: visible;
+     }
+}
+
+
+
+
+
+.panel {
+    border: none;
+    background-color: transparent;
+}
+
+.panel.btn-footer .panel-footer {
+  padding: 10px;
+  background-color: #525E43;
+
+}
+.panel.btn-footer .panel-footer .btn {
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.35em;
+  text-transform: uppercase;
+}
+ .panel-body {
+  background: #fbfbfb;
+  border-radius: 20px 20px 0 0;
+  border: 14px solid  #6E8458;
+}
+
+.panel-footer {
+    border-top: none;
+}
+.panel.contact.panel-default {
+  /*border: none;*/
+}
+
+
+
+footer {
+    /*margin-top: 115px;*/
+    background-color: #f7f7f7;
+    min-height: 50px;
+    padding: 100px 0;
+    /*color: #fbfbfb;*/
+
+}
+
+
+.footer-rightcol p {
+    text-align: center;
+    /*font-style: italic;*/
+    margin-top: 20px;
+}
+.bold-16p {
+    font-size: 15px;
+    font-weight: 600;
+}
+.footer-rightcol {
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-rightcol ul {
+    text-align: center;
+    padding: 0;
+}
+.footer-rightcol li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-rightcol li a {
+    opacity: 1;
+}
+.footer-rightcol li a:hover {
+    opacity: 0.5;
+}
+

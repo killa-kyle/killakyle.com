@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  font-family:Roboto;
+  background:whiteSmoke;
+}
+
+#links {
+/*   background:white; */
+  box-shadow:0 0 2px #000;
+  margin:0px 0;
+  width:100%;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+ul {
+  padding:30px 30px;
+}
+
+li {
+  list-style-type:none;
+  border-bottom:1px solid #ccc;
+
+}
+
+
+li:nth-child(n) {
+  background-color: darkgray;
+  color: #fff;
+}
+li:nth-child(2n) {
+  background-color: lightgray;
+  color: #fff;
+}
+li:last-child {
+  border:none;
+  
+}
+
+
+
+li a {
+  color: #555;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 25px 17px;
+  display: inline-block;
+  width: 100%;
+  box-sizing:padding-box;
+  cursor:pointer;
+}
+
+li:hover {
+  background:whiteSmoke;
+}
+
+li div {
+  padding: 0 20px 20px 20px;
+  margin-top:-7px;
+  display:none;
+}
+
+li div small, li div small a {
+  color:#555;
+}
+
+li div a {
+  font-size:inherit;
+  padding:0;
+  display:inline;
+}
+
+
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+li div a:hover {
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+li div a.gotosub {
+  font-size:inherit;
+  margin:15px 0 0 0;
+  color:#08C;
+  display:block;
+}
+
+li div a.gotosub:hover {
+  color: #005580;
+  text-decoration:none;
+}
+
+span[class^="json-data-"] {
+  color:#333;
+}
+
