@@ -7,20 +7,20 @@
 
 /* MAIN STYLES */
 
-* {
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
+// * {
+//     -webkit-transition: all .2s ease-in-out;
+//     -moz-transition: all .2s ease-in-out;
+//     transition: all .2s ease-in-out;
+// }
 
 body {
     width: 100%;
     height: 100%;
     font-size: 18px;
     font-family: 'Avenir Next','Open Sans','Montserrat', sans-serif;
-    // color: #5b5b5b;
-    color: $kyle-acc;
-    background-color: #fff;
+    color: $kyle-third;
+    // color: $kyle-acc;
+    background-color: $kyle-fifth;
 }
 
 html {
@@ -60,15 +60,17 @@ p {
     }
 }
 
+
+
 a {
-    color: $kyle-acc;
+    color:$kyle-primary;;
 
 }
 
 a:hover,
 a:focus {
     text-decoration: none;
-    color:$kyle-primary;;
+    color:$kyle-third;;
 
 }
 
@@ -85,10 +87,12 @@ a:focus {
 /////////////////////////////////////////////////////////////////////////////////
 
 .navbar {
+
     margin-bottom: 0;
     // border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     background-color:  $kyle-primary;
+    // background-color:  $transparent;
     // background-color: rgba(255,255,255,1);
 }
 
@@ -97,26 +101,42 @@ a:focus {
 }
 .navbar-brand {
     font-weight: 700;
+    color: $kyle-acc;
 
 }
 
 .navbar-brand:hover {
     color: $kyle-acc;
-    // font-size: 1.2em;      
 }
 
+
+.nav> li > a {
+    color: $kyle-acc;
+
+}
+
+.nav> li > a:hover,
+.nav> li > a:focus {
+    text-decoration: none;
+    color:$kyle-primary;;
+
+
+
+}
 
 
 .nav > li > a:hover {
     background: $kyle-acc;
-    // border-radius: 10px;
-    color: #fff;
+    border-radius: 10px;
+    color: $kyle-primary;
+
 }
+
 
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: $kyle-acc;
 }
 
 .navbar-toggle:focus,
@@ -129,17 +149,17 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background-color: $kyle-primary;
+        // background-color: none;
+
     }
+
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #fff;
+        // background-color: #fff;
     }
 
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
-    }
+
 }
 
 
@@ -153,12 +173,13 @@ a:focus {
     height: auto;
     padding: 40px 0;
     text-align: center;
-    color: #2D2D2D;
+    color: $kyle-acc;
     background-color: $kyle-primary;
+    // background-color: #fdfdfd;
     // background-image: url('../img/bg.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
 
 }
 
@@ -174,10 +195,12 @@ a:focus {
     font-family: 'Montserrat', sans-serif;
     font-size: 100px;
     font-weight: 700;
+    color: $kyle-acc;
 }
 
 .intro-text {
     font-size: 18px;
+    color: $kyle-acc;
 }
 .col-xs-6 {
   padding: 20px 0;
@@ -185,7 +208,7 @@ a:focus {
 .btn-soc.outline{
   width: 140px;
   border: 2px solid $kyle-acc;
-  background-color: $kyle-primary;
+  background-color: $transparent;
   color: $kyle-acc;
   padding: 12px 10px;
   font-weight: 400;
@@ -200,16 +223,8 @@ a:focus {
 
 
 
-.animated {
-    -webkit-animation: pulsate 2s ease-out;
-    -webkit-animation-iteration-count: infinite; 
-    opacity: 0.3
-}
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.25;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-}
+
+
 
 
 @media(min-width:767px) {
@@ -228,18 +243,17 @@ a:focus {
     }
 
     .btn-soc.outline{
-        width: 140px;
+        // width: 140px;
     }
 }
 
-.fa-angle-double-down {
-    font-size: 4em;
+.fa-angle-down {
+    // font-size: 1em;
+    padding-top: 60px;
     color: $kyle-acc;
 }
 
-.angle-down {
-    padding-top: 60px;
-}
+
      /////////////////////////////////////////////////////////////////////////////////
     ////////////////////// General section styles ///////////////////////////////////
    /////////////////////////////////////////////////////////////////////////////////
@@ -248,13 +262,19 @@ a:focus {
     padding-top: 100px;
 }
 
+.section-heading {
+    color: $kyle-primary;
+}
+
+
+
 
      /////////////////////////////////////////////////////////////////////////////////
     ////////////////////// Portfolio section styles /////////////////////////////////
    /////////////////////////////////////////////////////////////////////////////////
 
 #portfolio {
-    background-color: #fff;
+    background-color: $kyle-fifth;
 }
 #portfolio h4, {
     font-weight: 400;
@@ -263,6 +283,7 @@ a:focus {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 40px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -295,7 +316,7 @@ a:focus {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: $kyle-acc;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -315,6 +336,7 @@ a:focus {
     max-height: 94px;
     overflow: none;
     background-color: $kyle-primary;
+    // background-color: 
     color: $kyle-acc;
 }
 
@@ -328,7 +350,7 @@ a:focus {
     font-family: "Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     color: #5f5f5f;
-    // color: $kyle-acc;
+    color: $kyle-third;
     
 }
 
@@ -425,7 +447,7 @@ a:focus {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #222;
+    background-color: $kyle-third;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -435,7 +457,7 @@ a:focus {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #222;
+    background-color: $kyle-third;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -470,6 +492,7 @@ padding: 35px;
     padding: 15px 0;
     text-align: center;
     background-color: $kyle-primary;
+    color: $kyle-acc;
 }
 
 #footer h6 {
@@ -487,15 +510,50 @@ padding: 35px;
 
 
 
+// .btn-primary {
+
+//         color: $kyle-primary;
+//     background-color: $kyle-fifth;
+//     border: 2px solid $kyle-primary;
+//       font-weight: 400;
+// }
+
+// .btn-primary a {
+//     // background-color: $kyle-primary;
+//     color:$kyle-primary;
+// }
+
+// .btn-primary:hover  a{
+//     // background-color: $kyle-primary;
+//     color: $kyle-acc;
+// }
+// .btn-primary:hover  {
+//     color: $kyle-acc;
+//     background-color: $kyle-primary;
+//     border: 2px solid $kyle-primary;
+// }
 .btn-primary {
-    background-color: $kyle-primary;
+
+        color: $kyle-acc;
+    background-color: $kyle-fifth;
+    border: 2px solid $kyle-acc;
+      font-weight: 400;
+}
+
+.btn-primary a {
+    // background-color: $kyle-primary;
+    color:$kyle-acc;
+}
+
+.btn-primary:hover  a{
+    // background-color: $kyle-primary;
     color: $kyle-acc;
 }
 .btn-primary:hover  {
-    color: $kyle-primary;
-    background-color: $kyle-acc;
+    color: $kyle-acc;
+    background-color: $kyle-primary;
+    border: 2px solid $kyle-primary;
 }
-
 
 
 .btn-info.outline {
@@ -543,6 +601,16 @@ color: $kyle-primary;
        margin-bottom: 10px;
     }
 
+    .favorites  li{
+        display: inline-block;
+        float: left;
+        margin-right: 30px;
+    }
+
+    .interests {
+        text-align: right;
+    }
+
 
      /////////////////////////////////////////////////////////////////////////////////
     ////////////////////// Misc Page Styles//////// /////////////////////////////////
@@ -563,7 +631,7 @@ color: $kyle-primary;
 
 ::selection {
     text-shadow: none;
-    background: $kyle-primary;
+    background: ($kyle-fourth);
 }
 
 img::selection {

@@ -30,25 +30,11 @@ var App = {
         // Application has been initalized
         console.log(this.settings.name + "(v" + this.settings.version + ") Started");
 
-        $(window).scroll(headerParallax);
 
 
 
-        function headerParallax() {
-            var st = $(window).scrollTop();
-            var headerScroll = $('.header-scroll');
 
-            if (st < 900) {
-                console.log('this works');
-                headerScroll.css('opacity', 1 - st / 2000);
-                $('.page-scroll').css('opacity', 1 - st / 250);
-                headerScroll.css({
-                    // '-webkit-transform': 'translateY(' + st / 20 + '%)',
-                    // '-ms-transform': 'translateY(' + st / 20 + '%)',
-                    transform: 'translateY(' + st / 200 + '%)'
-                });
-            }
-        }
+
 
     }
 
